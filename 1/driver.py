@@ -1,3 +1,5 @@
+#!/bin/python3
+
 def readFile(filePath: str) -> tuple[list[int], list[int]]:
     left: list[int] = []
     right: list[int] = []
@@ -40,7 +42,7 @@ def main() -> None:
     left, right = readFile('input.txt')
     left, right = sortValues(left, right)
     total, similarity = calculateDifference(left, right)
-    print(total, similarity)
+    print(f'Total: {total}\nSimilarity: {similarity}')
 
 
 if __name__ == "__main__":
