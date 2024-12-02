@@ -1,7 +1,7 @@
 #!/bin/python3
 
 def readFile(filePath: str) -> list[list[int]]:
-    lines = list[list[int]]
+    lines: list[list[int]] = [[]]
 
     with open(filePath, 'r') as f:
         lines = f.read().splitlines()
