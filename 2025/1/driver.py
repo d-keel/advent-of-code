@@ -78,13 +78,13 @@ class RotationLock(CircularDoublyLinkedList):
             for _ in range(count):
                 #Turning Left
                 self.choice = self.choice.prev                                  # pyright: ignore[reportOptionalMemberAccess]
-                if self.choice.data == 0:
+                if self.choice.data == 0:                                       # pyright: ignore[reportOptionalMemberAccess]
                     zeroes += 1
         else:
             for _ in range(count):
                 #Turning Right
                 self.choice = self.choice.next                                  # pyright: ignore[reportOptionalMemberAccess]
-                if self.choice.data == 0:
+                if self.choice.data == 0:                                       # pyright: ignore[reportOptionalMemberAccess]
                     zeroes += 1
         return zeroes
 
